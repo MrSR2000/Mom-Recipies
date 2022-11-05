@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../screens/settings_screen.dart';
+import '../screens/filter_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
@@ -38,11 +38,11 @@ class MainDrawer extends StatelessWidget {
             },
           ),
           buildListTile(
-            'Settings',
+            'Filter',
             Icons.settings,
             () {
               Navigator.of(context)
-                  .pushReplacementNamed(SettingsScreen.routeName);
+                  .pushReplacementNamed(FiltersScreen.routeName);
             },
           ),
         ],
